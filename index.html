@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>sketchman's toing doings</title>
+    <script src="./main.js" defer></script>
+</head>
+<body class="everything1">
+    <div class="container">
+        <header>
+            <span class="heading">to-do list of Mr."S"</span>
+            <div class="theme_toggle">
+                <button class="theme_toggle_button"><img src="./img/light_mode_FILL0_wght400_GRAD0_opsz48.svg" style="height:21px"></button>
+                <button class="active_mode_button" data-mode-option="active">active</button>
+                <button type="button" class="options_button">settings
+                    <select>
+                        <option value="show_hidden_option">show hidden</option>
+                        <option value="show_icons_option">show icons</option>
+                        <option value="show_date option">show date</option>
+                        <option value="show_done_option">show done</option>
+                        <option value="change_style_option">change style</option>
+                        <option value="upload_icon_option">upload icon</option>
+                        <option value="upload_bg_option">upload background</option>
+                        <option value="desktop_hero_option">enable desktop hero</option>
+                    </select>
+                </button>
+            </div>
+        </header>
+        <section class="tasks">
+            <ul class="task_items" data-todo-option="active">
+            </ul>
+        </section>
+        <footer>
+            <form id="new_task_form">
+                <input type="text" name="new_task_input" id="new_task_input" placeholder="Create new task" value="">
+                <button id="new_task_submit_btn" type="submit"><img src="./img/add_FILL0_wght400_GRAD0_opsz48.png" style="height: 24px;"></button>
+                <img class="make_divided_btn" src="./img/percent_FILL0_wght400_GRAD0_opsz48.png" style="height:21px; background-color: aliceblue; margin: 3px;">
+            </form>
+        </footer>
+    </div>
+</body>
+</html>

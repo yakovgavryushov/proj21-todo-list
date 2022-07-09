@@ -1,0 +1,48 @@
+body {
+    background-color: #222034;
+    color: white;
+}
+.everything1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+
+}
+.heading {
+    line-height: 50px;
+}
+.container {    
+
+    position: relative;
+    width: 500px;
+    flex-direction: column;
+    height: 85vh;
+    border: 1px solid red;
+    font-size: 21px;
+}
+header {
+    justify-content: center;
+    align-items: center;
+
+}
+section {
+    justify-content: center;
+    align-items: center;
+
+}
+footer {    
+    justify-content: center;
+    align-items: center;
+
+}
+button {
+    font-size: 24px;
+}
+#new_task_input {
+    font-size: 24px;
+}
+#new_task_input::placeholder {
+    font-size: 24px;
+}
