@@ -8,34 +8,37 @@
     <script src="./main.js" defer></script>
 </head>
 <body class="everything1">
+    
     <div class="container">
-        <header>
-            <span class="heading">to-do list of Mr."S"</span>
+        <div class="heading"><span >to-do list of Mr."S"</span></div>
+        <header class="in_container">
             <div class="theme_toggle">
                 <button class="theme_toggle_button"><img src="./img/light_mode_FILL0_wght400_GRAD0_opsz48.png" style="height:21px"></button>
                 <button class="active_mode_button" data-mode-option="active">active</button>
-                <button type="button" class="options_button">settings
-                    <select>
-                        <option value="show_hidden_option">show hidden</option>
-                        <option value="show_icons_option">show icons</option>
-                        <option value="show_date option">show date</option>
-                        <option value="show_done_option">show done</option>
-                        <option value="change_style_option">change style</option>
-                        <option value="upload_icon_option">upload icon</option>
-                        <option value="upload_bg_option">upload background</option>
-                        <option value="desktop_hero_option">enable desktop hero</option>
-                    </select>
+                <div class="dropup">
+                <button type="button" class="options_button" onclick="dropUp()">settings
+                    <div id="settings_list" class="settings_toggle">
+                        <a class="show_hidden_option">show hidden</a>
+                        <a class="show_icons_option">show icons</a>
+                        <a class="show_date option">show date</a>
+                        <a class="show_done_option">show done</a>
+                        <a class="change_style_option">change style</a>
+                        <a class="upload_icon_option">upload icon</a>
+                        <a class="upload_bg_option">upload background</a>
+                        <a class="desktop_hero_option">enable desktop hero</a>
+                    </div>
+                </div>
                 </button>
             </div>
         </header>
-        <section class="tasks">
-            <ul class="task_items" data-todo-option="active">
+        <div class="in_container_tasks">
+            <ul id="task_items" data-todo-option="active">
             </ul>
-        </section>
-        <footer>
+        </div>
+        <footer class="in_container">
             <form id="new_task_form">
                 <input type="text" name="new_task_input" id="new_task_input" placeholder="Create new task" value="">
-                <button id="new_task_submit_btn" type="submit"><img src="./img/add_FILL0_wght400_GRAD0_opsz48.png" style="height: 24px;"></button>
+                <button id="new_task__btn" onclick="newTask()"><img src="./img/add_FILL0_wght400_GRAD0_opsz48.png" style="height: 24px;"></button>
                 <img class="make_divided_btn" src="./img/percent_FILL0_wght400_GRAD0_opsz48.png" style="height:21px; background-color: aliceblue; margin: 3px;">
             </form>
         </footer>

@@ -6,15 +6,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 90vh;
-
-
 }
 .heading {
     line-height: 50px;
+    text-align: center;
 }
 .container {    
-
+    display: flex;
     position: relative;
     width: 500px;
     flex-direction: column;
@@ -22,20 +22,54 @@ body {
     border: 1px solid red;
     font-size: 21px;
 }
+.in_container {
+    margin: 0px 10px;
+    float:left;
+}
 header {
     justify-content: center;
     align-items: center;
-
+    clear: both;
 }
 section {
     justify-content: center;
     align-items: center;
-
 }
 footer {    
     justify-content: center;
     align-items: center;
+}
+div .dropup {
+    position: inherit;
+}
 
+.options_button {
+    position: relative;
+}
+
+.theme_toggle {
+    display: flex;
+    flex-direction: row;
+}
+#settings_list {
+/* display: none; */
+    
+    position: absolute;
+    border: 1px solid red;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+#settings_list a {
+    display: block;
+}
+.settings_toggle {
+    display: none;
+}
+.options_button:hover .settings_list {
+    display: block;
+}
+.options_button:hover button {
+    background-color: aquamarine;
 }
 button {
     font-size: 24px;
@@ -45,4 +79,9 @@ button {
 }
 #new_task_input::placeholder {
     font-size: 24px;
+}
+.in_container_tasks {
+    float: left;
+    display: flex;
+    flex-direction: column;
 }
