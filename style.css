@@ -85,3 +85,15 @@ button {
     display: flex;
     flex-direction: column;
 }
+ul li {
+    cursor: pointer;
+    list-style-type: none;
+    background-color: aliceblue;
+    color: black;
+    display: inline-block;
+}
+ul li:active {
+    background-color: royalblue;
+    color:burlywood;
+
+}

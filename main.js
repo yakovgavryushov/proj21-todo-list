@@ -1,20 +1,22 @@
 function dropUp(){
     document.getElementById('settings_list').classList.toggle('settings_toggle')
 }
+
 let myNodeList = document.getElementsByTagName('LI');
 let i;
 for (i = 0; i < myNodeList.length; i++){
     let span = document.createElement('SPAN')
-    let txt = document.createTextNode('\u00D7')
+    let txt = document.createTextNode("\u00D7")
     span.className = "close";
     span.appendChild(txt)
     myNodeList(i).appendChild(span);
 }
+
 let close = document.getElementsByClassName('close');
-    for(i = 0; i < close.length; i++){
+    for (i = 0; i < close.length; i++){
         close[i].onclick = function(){
             let div = this.parentElement;
-            div.style.display = 'none'
+            div.style.display = "none"
         }
     }
 
@@ -23,23 +25,23 @@ function newTask(){
     let inputValue = document.getElementById('new_task_input').value;
     let t = document.createTextNode(inputValue);
     li.appendChild(t);
-    if(inputValue === ''){
+    if (inputValue === ''){
         alert('In order to add a task -- you must write something innit')
-    } else{
+    } else {
         document.getElementById('task_items').appendChild(li)
 }
 document.getElementById('new_task_input').value = "";
 
 let span = document.createElement('SPAN');
-let txt = document.createElement('\u00D7');
-span.className = 'close';
+let txt = document.createTextNode("\u00D7");
+span.className = "close";
 span.appendChild(txt);
 li.appendChild(span)
 
 
-for(i = 0; i < close.length; i++){
-    close[i].onclick = function(){
+for (i = 0; i < close.length; i++){
+    close[i].onclick = function() {
         let div = this.parentElement;
-        div.style.display = 'none'
+        div.style.display = "none"
     }
 }}
