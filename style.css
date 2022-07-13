@@ -45,6 +45,11 @@ div .dropup {
 
 .options_button {
     position: relative;
+    white-space: nowrap;
+    text-align: left;
+}
+.options_button a {
+    padding: 1px 4px
 }
 
 .theme_toggle {
@@ -68,7 +73,7 @@ div .dropup {
 .options_button:hover .settings_list {
     display: block;
 }
-.options_button:hover button {
+.options_button a:hover  {
     background-color: aquamarine;
 }
 button {
@@ -82,7 +87,8 @@ button {
 }
 .in_container_tasks {
     float: left;
-    display: flex;
+    display: block;
+    width: 50%;
     flex-direction: column;
 }
 ul li {
@@ -90,10 +96,21 @@ ul li {
     list-style-type: none;
     background-color: aliceblue;
     color: black;
-    display: inline-block;
+    margin: 6px 0px;
+
+}
+ul li:hover {
+    cursor: pointer;
+    list-style-type: none;
+    background-color:aquamarine;
+    color: black;
+
 }
 ul li:active {
     background-color: royalblue;
     color:burlywood;
-
+}
+.checked {
+    background-color: darkcyan;
+    color: aquamarine;
 }
