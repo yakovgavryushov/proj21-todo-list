@@ -94,10 +94,11 @@ button {
 ul li {
     cursor: pointer;
     list-style-type: none;
+    line-height: 30px;
     background-color: aliceblue;
     color: black;
-    margin: 6px 0px;
-
+    margin: 4px 0px;
+    padding: 1px 4px;
 }
 ul li:hover {
     cursor: pointer;
@@ -110,7 +111,13 @@ ul li:active {
     background-color: royalblue;
     color:burlywood;
 }
+span .close {
+    text-align: left;
+}
 .checked {
     background-color: darkcyan;
     color: aquamarine;
+}
+.checked:hover {
+    color: crimson;
 }
