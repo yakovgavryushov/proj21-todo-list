@@ -112,7 +112,7 @@ ul li:active {
     color:burlywood;
 }
 span .close {
-    text-align: left;
+    text-align:end;
 }
 .checked {
     background-color: darkcyan;

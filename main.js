@@ -32,7 +32,7 @@ list.addEventListener('click', function(ev){
     }
 }, false)
 
-// adding a task func, -- disappearing after being added
+// adding a task func
 function newTask(){
     let li = document.createElement('LI');
     let inputValue = document.getElementById('new_task_input').value;
@@ -60,7 +60,6 @@ for (i = 0; i < close.length; i++){
 }}
 
 // active/completed/deleted button
-
 let act_btn = document.getElementsByClassName("active_mode_button");
 act_btn.addEventListener('click', function(status){
     
